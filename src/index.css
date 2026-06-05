@@ -4,8 +4,13 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 48 33% 97%;
+    --foreground: 120 40% 15%;
+
+    /* Cream base */
+    --cream: #fdf8f0;
+    --forest-primary: #2d7a2d;
+    --gold-primary: #c9922a;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;

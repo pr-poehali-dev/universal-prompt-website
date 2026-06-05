@@ -18,8 +18,37 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+			cormorant: ['Cormorant', 'serif'],
+			golos: ['Golos Text', 'sans-serif'],
+		},
 		extend: {
 			colors: {
+				forest: {
+					50: '#f3f8f3',
+					100: '#e0f0e0',
+					200: '#b8d9b8',
+					300: '#7fb87f',
+					400: '#4d9e4d',
+					500: '#2d7a2d',
+					600: '#1e5e1e',
+					700: '#164616',
+					800: '#0f300f',
+					900: '#0a200a',
+				},
+				gold: {
+					50: '#fffbeb',
+					100: '#fef3c7',
+					200: '#fde68a',
+					300: '#fcd34d',
+					400: '#fbbf24',
+					500: '#c9922a',
+					600: '#a67c1f',
+					700: '#7c5c12',
+					800: '#52390a',
+					900: '#2e1f04',
+				},
+				cream: '#fdf8f0',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -70,6 +99,14 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			keyframes: {
+				'fade-in': {
+					from: { opacity: '0', transform: 'translateY(24px)' },
+					to: { opacity: '1', transform: 'translateY(0)' }
+				},
+				'fade-in-up': {
+					from: { opacity: '0', transform: 'translateY(40px)' },
+					to: { opacity: '1', transform: 'translateY(0)' }
+				},
 				'accordion-down': {
 					from: {
 						height: '0'
@@ -89,7 +126,9 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.7s ease-out both',
+				'fade-in-up': 'fade-in-up 0.8s ease-out both',
 			}
 		}
 	},
