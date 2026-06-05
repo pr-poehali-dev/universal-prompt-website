@@ -4,7 +4,7 @@ const plans = [
   {
     name: "Групповое сопровождение",
     duration: "6 недель",
-    price: "от 9 900 ₽",
+    price: "от 20 900 ₽",
     accent: "forest",
     accentGrad: "linear-gradient(135deg, #2d7a2d, #4d9e4d)",
     badge: null,
