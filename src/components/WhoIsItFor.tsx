@@ -88,6 +88,7 @@ const WhoIsItFor = () => {
                   "Живое сопровождение, не курс",
                   "Поддержка в моменте изменений",
                   "Конкретные инструменты на каждый день",
+                  "Ориентированность на результат, к которому вы стремитесь",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style={{ background: "linear-gradient(135deg, #2d7a2d, #4d9e4d)" }}>
