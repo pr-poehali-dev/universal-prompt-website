@@ -23,7 +23,7 @@ const plans = [
   {
     name: "Личное сопровождение",
     duration: "6 недель",
-    price: "от 19 900 ₽",
+    price: "от 24 900 ₽",
     accent: "gold",
     accentGrad: "linear-gradient(135deg, #c9922a, #f4b942)",
     badge: "Популярный",
