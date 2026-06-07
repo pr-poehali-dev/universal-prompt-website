@@ -56,12 +56,15 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button
-              className="font-golos font-semibold px-8 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            <a
+              href="https://t.me/GUM_GUM8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-golos font-semibold px-8 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 hover:shadow-xl inline-block"
               style={{ background: "linear-gradient(135deg, #2d7a2d, #4d9e4d)" }}
             >
               Хочу участвовать
-            </button>
+            </a>
             <button
               className="font-golos font-semibold px-8 py-4 rounded-full border-2 border-forest-500 text-forest-700 bg-white/60 backdrop-blur-sm transition-all duration-300 hover:bg-forest-50 hover:scale-105"
             >
