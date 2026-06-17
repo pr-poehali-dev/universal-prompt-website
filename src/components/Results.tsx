@@ -102,15 +102,12 @@ const Results = () => {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <a
-            href="https://t.me/GUM_GUM8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-golos font-semibold px-8 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 hover:shadow-xl inline-block"
+          <button
+            className="font-golos font-semibold px-8 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 hover:shadow-xl"
             style={{ background: "linear-gradient(135deg, #2d7a2d, #4d9e4d)" }}
           >
             Хочу такой результат
-          </a>
+          </button>
         </div>
       </div>
     </section>

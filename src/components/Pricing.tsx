@@ -134,15 +134,12 @@ const Pricing = () => {
                 </ul>
 
                 {/* CTA */}
-                <a
-                  href="https://t.me/GUM_GUM8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full font-golos font-semibold py-4 rounded-2xl text-white transition-all duration-300 hover:opacity-90 hover:scale-[1.02] block text-center"
+                <button
+                  className="w-full font-golos font-semibold py-4 rounded-2xl text-white transition-all duration-300 hover:opacity-90 hover:scale-[1.02]"
                   style={{ background: plan.accentGrad }}
                 >
                   {plan.cta}
-                </a>
+                </button>
               </div>
             </div>
           ))}
@@ -152,14 +149,9 @@ const Pricing = () => {
         <div className="text-center">
           <p className="font-golos text-sm text-forest-500">
             Не уверены, какой формат подойдёт?{" "}
-            <a
-              href="https://t.me/GUM_GUM8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-forest-700 font-semibold underline underline-offset-2 hover:text-gold-500 transition-colors"
-            >
+            <button className="text-forest-700 font-semibold underline underline-offset-2 hover:text-gold-500 transition-colors">
               Напишите мне — разберёмся вместе
-            </a>
+            </button>
           </p>
         </div>
       </div>

@@ -104,15 +104,12 @@ const WhoIsItFor = () => {
 
         {/* CTA */}
         <div className="text-center mt-10">
-          <a
-            href="https://t.me/GUM_GUM8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-golos font-semibold px-8 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 hover:shadow-xl inline-block"
+          <button
+            className="font-golos font-semibold px-8 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 hover:shadow-xl"
             style={{ background: "linear-gradient(135deg, #c9922a, #f4b942)" }}
           >
             Записаться на консультацию
-          </a>
+          </button>
         </div>
       </div>
     </section>

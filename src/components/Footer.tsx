@@ -29,23 +29,17 @@ const Footer = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
-            <a
-              href="https://t.me/GUM_GUM8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-golos font-semibold px-10 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 hover:shadow-xl text-lg inline-block"
+            <button
+              className="font-golos font-semibold px-10 py-4 rounded-full text-white transition-all duration-300 hover:scale-105 hover:shadow-xl text-lg"
               style={{ background: "linear-gradient(135deg, #2d7a2d, #4d9e4d)" }}
             >
               Хочу участвовать
-            </a>
-            <a
-              href="https://t.me/GUM_GUM8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-golos font-semibold px-10 py-4 rounded-full border-2 border-gold-400 text-gold-600 bg-white/70 backdrop-blur-sm transition-all duration-300 hover:bg-gold-50 hover:scale-105 text-lg inline-block"
+            </button>
+            <button
+              className="font-golos font-semibold px-10 py-4 rounded-full border-2 border-gold-400 text-gold-600 bg-white/70 backdrop-blur-sm transition-all duration-300 hover:bg-gold-50 hover:scale-105 text-lg"
             >
               Узнать подробнее
-            </a>
+            </button>
           </div>
         </div>
       </section>
