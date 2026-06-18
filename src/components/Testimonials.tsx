@@ -1,10 +1,27 @@
 const testimonials = [
   {
+    name: "Клиентка Гульмиры",
+    role: "Реальный отзыв",
+    text: "Перестала оглядываться на других, принимаю решения сама. Почувствовала веру в себя, пропало желание оправдываться. Это удивительно — я действительно изменилась.",
+    result: "Вера в себя",
+    initial: "★",
+    real: true,
+  },
+  {
     name: "Алина, 34 года",
     role: "Предприниматель",
     text: "Я три года не могла выйти на новый уровень дохода. Казалось, всё делаю правильно — но что-то всегда шло не так. После работы с Гульмирой поняла, где именно был блок. За два месяца доход вырос вдвое.",
     result: "Доход ×2 за 2 месяца",
     initial: "А",
+    real: false,
+  },
+  {
+    name: "Артём, 36 лет",
+    role: "Руководитель отдела",
+    text: "Думал, психология — не для мужчин. Пришёл, потому что застрял на одной позиции три года и не понимал почему. Оказалось — страх ответственности, зашитый ещё с детства. Сейчас получил повышение.",
+    result: "Карьерный рост",
+    initial: "А",
+    real: false,
   },
   {
     name: "Марина, 29 лет",
@@ -12,6 +29,15 @@ const testimonials = [
     text: "Я постоянно саботировала себя — начинала и бросала. Думала, это лень. Оказалось — глубинный сценарий «я не достойна». Сейчас я запустила свой проект и не отступаю.",
     result: "Запустила свой проект",
     initial: "М",
+    real: false,
+  },
+  {
+    name: "Дмитрий, 41 год",
+    role: "Собственник бизнеса",
+    text: "Бизнес рос, а я всё равно чувствовал тревогу и пустоту. Работа с Гульмирой помогла понять, что гнал себя из страха, а не из желания. Теперь принимаю решения спокойно и с удовольствием.",
+    result: "Спокойствие и ясность",
+    initial: "Д",
+    real: false,
   },
   {
     name: "Светлана, 41 год",
@@ -19,6 +45,15 @@ const testimonials = [
     text: "Долго не могла выйти из отношений, которые разрушали меня. Работа с установками дала понимание, почему я снова и снова выбирала одно и то же. Сейчас строю здоровые отношения.",
     result: "Вышла из абьюза",
     initial: "С",
+    real: false,
+  },
+  {
+    name: "Максим, 33 года",
+    role: "IT-специалист",
+    text: "Я избегал любых конфликтов, всё время соглашался с другими — даже когда был не согласен. Через месяц работы начал говорить «нет» без вины. Это изменило буквально всё.",
+    result: "Научился говорить «нет»",
+    initial: "М",
+    real: false,
   },
   {
     name: "Диана, 26 лет",
@@ -26,13 +61,7 @@ const testimonials = [
     text: "Боялась проявляться — не вела соцсети, отказывалась от выступлений, прятала свою экспертность. После программы начала вести блог. Первые клиенты пришли уже через месяц.",
     result: "Начала проявляться",
     initial: "Д",
-  },
-  {
-    name: "Ольга, 38 лет",
-    role: "Коуч",
-    text: "Ходила по одному и тому же кругу в отношениях и деньгах годами. Не понимала, почему. Гульмира помогла найти точку, где всё блокировалось. Ощущение — как будто жизнь наконец сдвинулась.",
-    result: "Вышла из замкнутого круга",
-    initial: "О",
+    real: false,
   },
   {
     name: "Камила, 32 года",
@@ -40,6 +69,7 @@ const testimonials = [
     text: "Принимала решения с огромным трудом — всё время сомневалась, откладывала. После работы с установками стало легче в разы. Коллеги заметили изменения раньше, чем я сама.",
     result: "Лёгкость в решениях",
     initial: "К",
+    real: false,
   },
 ];
 
@@ -93,13 +123,25 @@ const Testimonials = () => {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="bg-white rounded-3xl p-7 shadow-sm border border-stone-100 flex flex-col gap-5 hover:shadow-md transition-shadow duration-300"
+              className={`rounded-3xl p-7 flex flex-col gap-5 hover:shadow-md transition-shadow duration-300 ${
+                t.real
+                  ? "shadow-lg border-2 border-gold-300 lg:col-span-3"
+                  : "bg-white shadow-sm border border-stone-100"
+              }`}
+              style={t.real ? { background: "linear-gradient(135deg, #fffbf0, #f0f8f0)" } : {}}
             >
+              {t.real && (
+                <div className="inline-flex self-start items-center gap-2 bg-gold-100 border border-gold-300 rounded-full px-4 py-1.5">
+                  <div className="w-1.5 h-1.5 rounded-full bg-gold-500" />
+                  <span className="font-golos text-xs text-gold-700 font-semibold uppercase tracking-wide">Реальный отзыв</span>
+                </div>
+              )}
+
               {/* Stars */}
               <div className="text-gold-400 text-sm tracking-wider">★★★★★</div>
 
               {/* Text */}
-              <p className="font-golos text-forest-700 text-sm leading-relaxed flex-1">
+              <p className={`font-golos text-forest-700 leading-relaxed flex-1 ${t.real ? "text-lg lg:text-xl italic" : "text-sm"}`}>
                 «{t.text}»
               </p>
 
@@ -116,7 +158,7 @@ const Testimonials = () => {
               <div className="flex items-center gap-3 pt-2 border-t border-stone-100">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center text-white font-golos font-bold text-sm shrink-0"
-                  style={{ background: "linear-gradient(135deg, #2d7a2d, #4d9e4d)" }}
+                  style={{ background: t.real ? "linear-gradient(135deg, #c9922a, #f4b942)" : "linear-gradient(135deg, #2d7a2d, #4d9e4d)" }}
                 >
                   {t.initial}
                 </div>
