@@ -34,7 +34,7 @@ const AboutAuthor = () => {
                 style={{ background: "linear-gradient(135deg, #c9922a, #2d7a2d)" }}
               />
               <img
-                src="https://cdn.poehali.dev/projects/51ed0136-427f-4f55-9ebb-708734497941/bucket/9cd8230b-341b-468f-8150-a48d2432fd4b.png"
+                src="https://cdn.poehali.dev/projects/51ed0136-427f-4f55-9ebb-708734497941/bucket/e3b10b31-16ba-48cd-b7f3-5c5a568d41c1.png"
                 alt="Гульмира Абу — психолог"
                 className="relative rounded-3xl object-cover shadow-2xl w-full max-w-sm"
                 style={{ maxHeight: "520px", objectPosition: "top center" }}
