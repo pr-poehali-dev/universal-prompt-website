@@ -93,7 +93,7 @@ const Hero = () => {
               style={{ background: "linear-gradient(135deg, #c9922a40, #2d7a2d40)" }}
             />
             <img
-              src="https://cdn.poehali.dev/projects/51ed0136-427f-4f55-9ebb-708734497941/bucket/9cd8230b-341b-468f-8150-a48d2432fd4b.png"
+              src="https://cdn.poehali.dev/projects/51ed0136-427f-4f55-9ebb-708734497941/bucket/e3b10b31-16ba-48cd-b7f3-5c5a568d41c1.png"
               alt="Психолог по личностным установкам"
               className="relative rounded-3xl object-cover w-full max-w-md lg:max-w-lg shadow-2xl"
               style={{ maxHeight: "600px", objectPosition: "top center" }}

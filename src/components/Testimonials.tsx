@@ -49,27 +49,43 @@ const Testimonials = () => {
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 border border-gold-300 rounded-full px-5 py-2 bg-white/60 mb-6">
-            <span className="text-gold-500 text-sm">★★★★★</span>
-            <span className="font-golos text-sm text-forest-700 font-medium uppercase tracking-wide">Отзывы клиентов</span>
+        <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
+          {/* Photo */}
+          <div className="shrink-0 relative">
+            <div
+              className="absolute -inset-3 rounded-3xl opacity-30 blur-lg"
+              style={{ background: "linear-gradient(135deg, #c9922a, #2d7a2d)" }}
+            />
+            <img
+              src="https://cdn.poehali.dev/projects/51ed0136-427f-4f55-9ebb-708734497941/bucket/e3b10b31-16ba-48cd-b7f3-5c5a568d41c1.png"
+              alt="Гульмира Абу"
+              className="relative rounded-3xl object-cover shadow-xl w-48 h-60 lg:w-56 lg:h-72"
+              style={{ objectPosition: "top center" }}
+            />
           </div>
-          <h2 className="font-cormorant text-4xl lg:text-5xl font-bold text-forest-800 mb-4">
-            Результаты говорят<br />
-            <span
-              className="italic"
-              style={{
-                background: "linear-gradient(90deg, #c9922a, #f4b942)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              сами за себя
-            </span>
-          </h2>
-          <p className="font-golos text-forest-600 max-w-xl mx-auto">
-            Реальные истории людей, которые изменили свои внутренние сценарии
-          </p>
+          {/* Text */}
+          <div className="text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 border border-gold-300 rounded-full px-5 py-2 bg-white/60 mb-6">
+              <span className="text-gold-500 text-sm">★★★★★</span>
+              <span className="font-golos text-sm text-forest-700 font-medium uppercase tracking-wide">Отзывы клиентов</span>
+            </div>
+            <h2 className="font-cormorant text-4xl lg:text-5xl font-bold text-forest-800 mb-4">
+              Результаты говорят<br />
+              <span
+                className="italic"
+                style={{
+                  background: "linear-gradient(90deg, #c9922a, #f4b942)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                сами за себя
+              </span>
+            </h2>
+            <p className="font-golos text-forest-600 max-w-xl">
+              Реальные истории людей, которые изменили свои внутренние сценарии
+            </p>
+          </div>
         </div>
 
         {/* Grid */}
