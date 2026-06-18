@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import AboutAuthor from "@/components/AboutAuthor";
 import WhoIsItFor from "@/components/WhoIsItFor";
 import Results from "@/components/Results";
 import Pricing from "@/components/Pricing";
@@ -8,6 +9,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-cream font-golos overflow-x-hidden">
       <Hero />
+      <AboutAuthor />
       <WhoIsItFor />
       <Results />
       <Pricing />
